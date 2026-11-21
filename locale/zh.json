@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "截图",
+    "description": "截取屏幕任意区域并插入输入框，可识别图片文字、翻译文字或描述图片内容。",
+    "detail": "docs/DETAIL.md"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "@local/dsh-shot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Capture any region of the screen into the composer, then read, translate, or describe the image.",
+  "license": "MIT",
+  "author": "reiaaaaa (https://github.com/reiaaaaa)",
+  "homepage": "https://github.com/reiaaaaa/dsh-shot#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reiaaaaa/dsh-shot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reiaaaaa/dsh-shot/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "screenshot",
+    "snip",
+    "ocr",
+    "translate",
+    "screenshot-plugin"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "windows-script.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
