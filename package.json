@@ -1,0 +1,54 @@
+{
+  "name": "@reiaaaaa/dsh-3-features-screenshot",
+  "version": "1.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Capture any region of any monitor into the composer as an attachment, then read its text, translate it, or describe the picture — three things from one screenshot.",
+  "license": "MIT",
+  "author": "reiaaaaa (https://github.com/reiaaaaa)",
+  "homepage": "https://github.com/reiaaaaa/dsh-3-features-screenshot#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reiaaaaa/dsh-3-features-screenshot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reiaaaaa/dsh-3-features-screenshot/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "screenshot",
+    "snip",
+    "ocr",
+    "translate"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "windows-script.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "assets"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
