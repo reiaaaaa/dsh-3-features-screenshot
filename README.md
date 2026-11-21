@@ -20,7 +20,7 @@ Requires a DeepSeek Harness build that ships the plugin manager (`dsh` desktop 0
 1. Clone this repository somewhere stable:
 
    ```sh
-   git clone https://github.com/reiaaaaa/dsh-shot.git
+   git clone https://github.com/reiaaaaa/DSH-shot-reiaaaaa.git
    ```
 
 2. In DeepSeek Harness open **Plugins → Add plugin** and pick the cloned `dsh-shot` directory.

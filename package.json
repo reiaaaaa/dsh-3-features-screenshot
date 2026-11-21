@@ -6,13 +6,13 @@
   "description": "Capture any region of the screen into the composer, then read, translate, or describe the image.",
   "license": "MIT",
   "author": "reiaaaaa (https://github.com/reiaaaaa)",
-  "homepage": "https://github.com/reiaaaaa/dsh-shot#readme",
+  "homepage": "https://github.com/reiaaaaa/DSH-shot-reiaaaaa#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reiaaaaa/dsh-shot.git"
+    "url": "git+https://github.com/reiaaaaa/DSH-shot-reiaaaaa.git"
   },
   "bugs": {
-    "url": "https://github.com/reiaaaaa/dsh-shot/issues"
+    "url": "https://github.com/reiaaaaa/DSH-shot-reiaaaaa/issues"
   },
   "keywords": [
     "deepseek-harness",
