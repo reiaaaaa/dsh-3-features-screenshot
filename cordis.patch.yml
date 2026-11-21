@@ -1,6 +1,6 @@
 # Inserts the one row this bundle owns: the Host half that serves a fresh
 # screen capture to the browser over its own Connection route.
 - insert:
-    - id: dsh-shot
-      name: '@local/dsh-shot'
+    - id: dsh-3-features-screenshot
+      name: '@reiaaaaa/dsh-3-features-screenshot'
       config: {}

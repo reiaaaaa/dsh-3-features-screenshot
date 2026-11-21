@@ -1,9 +1,9 @@
 {
-  "name": "@local/dsh-shot",
+  "name": "@reiaaaaa/dsh-3-features-screenshot",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Capture any region of the screen into the composer, then read, translate, or describe the image.",
+  "description": "Capture any region of any monitor into the composer as an attachment, then read its text, translate it, or describe the picture — three things from one screenshot.",
   "license": "MIT",
   "author": "reiaaaaa (https://github.com/reiaaaaa)",
   "homepage": "https://github.com/reiaaaaa/DSH-shot-reiaaaaa#readme",

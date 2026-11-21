@@ -1,5 +1,5 @@
 /**
- * dsh-shot · browser half.
+ * 3 features screenshot · browser half.
  *
  * One button in the composer tool row, one shortcut command, and one card that
  * offers the three things people usually want from a screenshot: read the text,
@@ -10,7 +10,7 @@
  * can reach past this window's edges.
  */
 window.__ModuleLoader__.load({
-  id: '@local/dsh-shot',
+  id: '@reiaaaaa/dsh-3-features-screenshot',
   factory(require) {
     const React = require('react')
     const h = React.createElement
@@ -83,7 +83,7 @@ window.__ModuleLoader__.load({
 .dsh-shot__pill{position:fixed;left:50%;top:16px;transform:translateX(-50%);display:flex;align-items:center;gap:8px;max-width:min(520px,calc(100vw - 32px));padding:8px 14px;border:1px solid var(--dsw-alias-border-l1);border-radius:999px;background:var(--dsw-alias-bg-overlay);color:var(--dsw-alias-label-primary);font-size:12px;line-height:1.4;pointer-events:none;box-shadow:0 12px 30px rgba(0,0,0,.28)}
 .dsh-shot__spin{flex:none;width:12px;height:12px;border:2px solid var(--dsw-alias-border-l2);border-top-color:var(--dsw-alias-brand-primary);border-radius:999px;animation:dsh-shot-spin .8s linear infinite}
 @keyframes dsh-shot-spin{to{transform:rotate(360deg)}}
-.dsh-shot__card{position:fixed;left:50%;top:16px;transform:translateX(-50%);display:flex;align-items:center;gap:12px;max-width:min(560px,calc(100vw - 32px));padding:10px;border:1px solid var(--dsw-alias-border-l1);border-radius:14px;background:var(--dsw-alias-bg-overlay);color:var(--dsw-alias-label-primary);pointer-events:auto;box-shadow:0 14px 34px rgba(0,0,0,.3)}
+.dsh-shot__card{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);display:flex;align-items:center;gap:12px;max-width:min(560px,calc(100vw - 32px));padding:10px;border:1px solid var(--dsw-alias-border-l1);border-radius:14px;background:var(--dsw-alias-bg-overlay);color:var(--dsw-alias-label-primary);pointer-events:auto;box-shadow:0 14px 34px rgba(0,0,0,.3)}
 .dsh-shot__thumb{flex:none;display:block;max-width:88px;max-height:60px;border:1px solid var(--dsw-alias-border-l2);border-radius:8px;object-fit:cover;background:var(--dsw-alias-bg-layer-2)}
 .dsh-shot__card-body{display:flex;flex-direction:column;gap:8px;min-width:0}
 .dsh-shot__card-title{font-size:12px;color:var(--dsw-alias-label-secondary)}
@@ -288,6 +288,30 @@ window.__ModuleLoader__.load({
 
         const peek = (element) => pick(element)
 
+        /** The composer card the result card should sit above. */
+        const composerCard = () => {
+          const consumer = target !== null && consumers.has(target) ? target : pick(null)
+          const card = consumer === null ? null : consumer.card()
+          if (card !== null) return card
+          return document.querySelector(COMPOSER_CARD)
+        }
+
+        /**
+         * Where to pin the result card: horizontally centred on the composer it
+         * belongs to and floating just above it, so it never covers the chat.
+         */
+        const composerAnchor = () => {
+          const card = composerCard()
+          if (card === null || typeof card.getBoundingClientRect !== 'function') return null
+          const rect = card.getBoundingClientRect()
+          if (rect === null || rect.width <= 0 || rect.height <= 0) return null
+          const viewportWidth = Math.max(window.innerWidth, 320)
+          const half = Math.min(280, viewportWidth / 2 - 12)
+          const centre = Math.min(Math.max(rect.left + rect.width / 2, half), viewportWidth - half)
+          const gap = Math.max(12, Math.round(window.innerHeight - rect.top + 10))
+          return { centre: Math.round(centre), gap }
+        }
+
         // -------------------------------------------------------------- capture
         /** Ask the Host for one screen snip and hand the result to the composer. */
         const start = async (element) => {
@@ -484,7 +508,38 @@ window.__ModuleLoader__.load({
 
         function OverlayView() {
           const state = useStore(store)
+          const [anchor, setAnchor] = useState(null)
           const parts = []
+          const attached = state.phase === 'attached' && state.thumb !== null
+
+          // The card floats above the composer, so it has to follow the composer
+          // when the window resizes or the input row grows an attachment row.
+          useEffect(() => {
+            if (!attached) {
+              setAnchor(null)
+              return () => {}
+            }
+            const measure = () => {
+              const next = composerAnchor()
+              setAnchor((current) => (
+                current !== null && next !== null && current.centre === next.centre && current.gap === next.gap
+                  ? current
+                  : next
+              ))
+            }
+            measure()
+            window.addEventListener('resize', measure)
+            const card = composerCard()
+            let observer = null
+            if (card !== null && typeof ResizeObserver === 'function') {
+              observer = new ResizeObserver(measure)
+              observer.observe(card)
+            }
+            return () => {
+              window.removeEventListener('resize', measure)
+              if (observer !== null) observer.disconnect()
+            }
+          }, [attached])
 
           if (state.phase === 'snip' || state.phase === 'committing') {
             parts.push(h('div', { key: 'pill', className: 'dsh-shot__pill' },
@@ -492,8 +547,14 @@ window.__ModuleLoader__.load({
               h('span', null, state.phase === 'snip' ? t('state.snip') : t('state.waiting'))))
           }
 
-          if (state.phase === 'attached' && state.thumb !== null) {
-            parts.push(h('div', { key: 'card', className: 'dsh-shot__card' },
+          if (attached) {
+            parts.push(h('div', {
+              key: 'card',
+              className: 'dsh-shot__card',
+              style: anchor === null
+                ? undefined
+                : { left: `${anchor.centre}px`, bottom: `${anchor.gap}px` },
+            },
               h('img', { className: 'dsh-shot__thumb', src: state.thumb.url, alt: '' }),
               h('div', { className: 'dsh-shot__card-body' },
                 h('span', { className: 'dsh-shot__card-title' }, t('state.attached')),
@@ -510,7 +571,7 @@ window.__ModuleLoader__.load({
               }, '×')))
           }
 
-          if (state.notice !== null) {
+          if (state.notice !== null && state.phase !== 'committing') {
             parts.push(h('div', { key: 'notice', className: 'dsh-shot__toast', role: 'status' }, state.notice))
           }
 

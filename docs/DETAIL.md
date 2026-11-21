@@ -1,4 +1,4 @@
-# Screenshot
+# 3 features screenshot
 
 Pick any rectangle on the screen, and the rectangle lands in the composer as an
 image attachment, ready to send. The desktop keeps running while you pick — the
@@ -20,7 +20,7 @@ back.
   attached. After 90 seconds without a pick the overlay closes by itself.
 
 The finished screenshot appears twice: as a normal attachment in the composer, and
-in a small card at the top of the page with three shortcuts for the model.
+in a small card floating just above the composer with three shortcuts for the model.
 
 ## Asking the model about it
 

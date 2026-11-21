@@ -1,6 +1,10 @@
-# dsh-shot
+> 我是个小白，这个插件全靠 DeepSeek Harness 帮我说出来的——我描述需求、它写代码，所以下面的介绍里可能有些读起来蹩脚的地方，但功能我自己反复测过，非常合我意，希望大家喜欢～
+>
+> I'm a beginner, and this plugin was built entirely by telling DeepSeek Harness what I wanted — I described it, it wrote the code. So some wording below may read a little awkward; the features are ones I tested myself and am genuinely happy with. Hope you like it too.
 
-Screenshot plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) — drag any region of any monitor, and the picture lands in the composer as an attachment, ready to send. The model then reads its text, translates it, or describes it.
+# 3 features screenshot
+
+A plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) — drag any region of any monitor, the picture lands in the composer as an attachment, and the model reads its text, translates it, or describes it. One screenshot, three things you usually want from it.
 
 ![The region picker and the attached screenshot](docs/preview.svg)
 
@@ -65,7 +69,7 @@ The image never leaves the machine except as part of a message you send.
 
 ## 中文说明
 
-在输入框左边点「截图」（或按 `Ctrl+Shift+S`），在屏幕上拖出一块区域，松手后这张图会作为附件出现在输入框里，等你发送。顶部的卡片可以一键填入「识别文字 / 翻译 / 描述内容」的提示词——只填提示词，不会自动发送。
+在输入框左边点「截图」（或按 `Ctrl+Shift+S`），在屏幕上拖出一块区域，松手后这张图会作为附件出现在输入框里，等你发送。输入框正上方浮出的卡片可以一键填入「识别文字 / 翻译 / 描述内容」的提示词——只填提示词，不会自动发送。
 
 - 覆盖所有显示器，选区之外屏幕只是变暗，不会冻结画面；`Esc` 或右键取消。
 - 快捷键和其他 DSH 命令一样，在 **设置 → 快捷键** 里改。
