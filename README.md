@@ -13,7 +13,7 @@ A plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)
 - **Any size, any monitor.** One borderless layer covers the whole virtual screen; the rectangle you drag is the only thing captured. The desktop keeps running behind a light veil — nothing is frozen, and nothing is grabbed behind your back when you click.
 - **Lands in the composer.** The PNG is inserted as a normal image attachment and waits for you to send it. Nothing is submitted automatically.
 - **Ask the model about it.** A small card offers **Read text**, **Translate**, and **Describe**, which fill in the prompt — they never send.
-- **Your own shortcut.** `Ctrl+Shift+S` (`⌘⇧S`) by default, rebound like any other DSH command in **Settings → Shortcuts**.
+- **Your own shortcut.** `Ctrl+Shift+S` (`⌘⇧S`) by default, rebound like any other DSH command in **Settings → Shortcuts** — see [Change the shortcut](#change-the-shortcut).
 - **Never duplicates.** If the composer refuses files while a reply is still streaming, the shot is held and retried until the composer accepts it, instead of pasting it twice or dropping it.
 - **No extra runtime.** The Host half draws the selection in one PowerShell process on Windows and calls the platform's own snipper on macOS and Linux. No native module, no bundled binary, no screenshot service.
 
@@ -40,6 +40,17 @@ Requires a DeepSeek Harness build that ships the plugin manager (`dsh` desktop 0
 | The image appears in the composer | Plus a card with **Read text / Translate / Describe** |
 
 The three card actions only write a prompt; edit it and send when you like.
+
+### Change the shortcut
+
+The plugin registers one command instead of hard-coding a key, so the binding lives in Harness's own shortcut settings:
+
+1. Open **Settings → Shortcuts** (中文界面：**设置 → 快捷键**).
+2. Find **Take a screenshot** — the row this plugin ships (中文界面显示为 **截取屏幕区域**).
+3. Click the keycaps on the right, press the new combination, and confirm. `Esc` cancels; clearing the binding falls back to the default.
+4. It applies immediately: hover the composer button and the tooltip shows the keys now in effect.
+
+The default is `Ctrl+Shift+S` (`⌘⇧S` on macOS), checked against every other command for conflicts. Desktop and web keep separate bindings — desktop writes them to `keybindings.json` in the app's user data, web to the `dsh.keybindings.v1` browser key.
 
 ### Platforms
 
@@ -73,6 +84,17 @@ The image never leaves the machine except as part of a message you send.
 - 快捷键和其他 DSH 命令一样，在 **设置 → 快捷键** 里改。
 - 截图时如果助手还在回复，会先显示「正在插入截图…」，回复结束自动放进输入框，不会重复插入。
 - 图片只用本机的临时文件转交，不会上传到任何第三方。
+
+### 改快捷键
+
+插件只注册一个命令、没有把按键写死，所以绑定就在 Harness 自己的快捷键设置里：
+
+1. 打开 **设置 → 快捷键**；
+2. 找到 **截取屏幕区域** 这一行（英文界面是 **Take a screenshot**）；
+3. 点右侧的键帽，按下新的组合键并确认（`Esc` 取消，清空绑定即恢复默认）；
+4. 立刻生效 —— 鼠标悬停在输入框左边的「截图」按钮上，提示里显示的就是当前绑定。
+
+默认是 `Ctrl+Shift+S`（macOS `⌘⇧S`），新组合会和其他命令做冲突检查。桌面版和网页版各存一份：桌面版首次修改后写入应用数据目录的 `keybindings.json`，网页版存浏览器里的 `dsh.keybindings.v1`。
 
 安装：克隆本仓库后，在 DeepSeek Harness 里打开 **插件 → 添加插件**，选择克隆下来的目录，然后完整退出并重开一次应用。
 
