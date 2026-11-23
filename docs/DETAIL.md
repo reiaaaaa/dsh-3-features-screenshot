@@ -5,7 +5,9 @@ image attachment, ready to send. The desktop keeps running while you pick — th
 plugin never freezes the screen and never shoots the whole display behind your
 back.
 
-![The screenshot card and the attached image](preview.svg)
+![The screenshot picker: the screen dims, the dragged rectangle stays live](screenshot-pick.png)
+
+![The composer after a screenshot: the image is attached and the card offers Read text, Translate, and Describe](screenshot-composer.png)
 
 ## Taking a screenshot
 

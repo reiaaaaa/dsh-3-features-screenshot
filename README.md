@@ -6,7 +6,9 @@
 
 A plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) — drag any region of any monitor, the picture lands in the composer as an attachment, and the model reads its text, translates it, or describes it. One screenshot, three things you usually want from it.
 
-![The region picker and the attached screenshot](docs/preview.svg)
+![Preview of the screenshot picker: the screen dims, the dragged rectangle stays live, and the size badge shows 972 x 396](docs/screenshot-pick.png)
+
+![Preview of the composer after a screenshot: the image is attached and a small card offers Read text, Translate, and Describe](docs/screenshot-composer.png)
 
 ## Features
 
