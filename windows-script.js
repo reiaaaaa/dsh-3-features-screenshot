@@ -1,1 +1,163 @@
-LyoqCiAqIFRoZSBXaW5kb3dzIGhhbGYgb2YgdGhlIHNuaXBwZXIsIGtlcHQgYXBhcnQgc28gdGhlIHNjcmlwdCBjYW4gYmUgaW5zcGVjdGVkCiAqIGFuZCBzeW50YXgtY2hlY2tlZCB3aXRob3V0IHJ1bm5pbmcgYSBjYXB0dXJlLgogKgogKiBUaGUgc3lzdGVtIHNuaXBwaW5nIG92ZXJsYXkgKGBtcy1zY3JlZW5jbGlwOmApIGlzIGJvdW5kIHRvIG9uZSBkaXNwbGF5IG9uIHNvbWUKICogc2V0dXBzIGFuZCBhbHdheXMgbGVhdmVzIHRoZSBwaWN0dXJlIGluIHRoZSBjbGlwYm9hcmQuIFRoaXMgc2NyaXB0IGRyYXdzIGl0cwogKiBvd24gc2VsZWN0aW9uIGxheWVyIGFjcm9zcyB0aGUgd2hvbGUgdmlydHVhbCBzY3JlZW4gaW5zdGVhZCDigJQgdGhlIGRlc2t0b3Aga2VlcHMKICogcnVubmluZyBiZWhpbmQgYSBsaWdodCB2ZWlsLCBhbnkgbW9uaXRvciBjYW4gYmUgdXNlZCwgYSBjYW5jZWwgaXMgcmVwb3J0ZWQKICogaW1tZWRpYXRlbHksIGFuZCB0aGUgc2VsZWN0ZWQgcmVjdGFuZ2xlIGlzIGNvcGllZCBzdHJhaWdodCBpbnRvIHRoZSBQTkcuCiAqLwoKLyoqCiAqIEJ1aWxkIHRoZSBQb3dlclNoZWxsIHNjcmlwdCB0aGF0IHdyaXRlcyB0aGUgcGlja2VkIFBORyB0byBgZGVzdGluYXRpb25gLgogKiBAcGFyYW0gZGVzdGluYXRpb24gLSBhYnNvbHV0ZSBwYXRoIG9mIHRoZSBQTkcgdG8gY3JlYXRlLgogKiBAcGFyYW0gZGVhZGxpbmVTZWNvbmRzIC0gaG93IGxvbmcgdGhlIHVzZXIgbWF5IHRha2UuCiAqIEByZXR1cm5zIHRoZSBzY3JpcHQgdGV4dC4KICovCmV4cG9ydCBmdW5jdGlvbiB3aW5kb3dzU2NyaXB0KGRlc3RpbmF0aW9uLCBkZWFkbGluZVNlY29uZHMgPSA5MCkgewogIHJldHVybiBbCiAgICAiJEVycm9yQWN0aW9uUHJlZmVyZW5jZSA9ICdTdG9wJyIsCiAgICAnQWRkLVR5cGUgLUFzc2VtYmx5TmFtZSBTeXN0ZW0uV2luZG93cy5Gb3JtcycsCiAgICAnQWRkLVR5cGUgLUFzc2VtYmx5TmFtZSBTeXN0ZW0uRHJhd2luZycsCiAgICAiQWRkLVR5cGUgLVR5cGVEZWZpbml0aW9uICd1c2luZyBTeXN0ZW07IHVzaW5nIFN5c3RlbS5SdW50aW1lLkludGVyb3BTZXJ2aWNlczsgcHVibGljIHN0YXRpYyBjbGFzcyBEc2hTaG90RHBpIHsgW0RsbEltcG9ydChcInVzZXIzMi5kbGxcIildIHB1YmxpYyBzdGF0aWMgZXh0ZXJuIGJvb2wgU2V0UHJvY2Vzc0RQSUF3YXJlKCk7IH0nIiwKICAgICd0cnkgeyBbRHNoU2hvdERwaV06OlNldFByb2Nlc3NEUElBd2FyZSgpIHwgT3V0LU51bGwgfSBjYXRjaCB7IH0nLAogICAgJyRzY3JlZW4gPSBbU3lzdGVtLldpbmRvd3MuRm9ybXMuU3lzdGVtSW5mb3JtYXRpb25dOjpWaXJ0dWFsU2NyZWVuJywKICAgICckc2NyaXB0OmFyZWEgPSAkbnVsbCcsCiAgICAnJHNjcmlwdDpkcmFnZ2luZyA9ICRmYWxzZScsCiAgICAnJHNjcmlwdDpvcmlnaW4gPSBOZXctT2JqZWN0IFN5c3RlbS5EcmF3aW5nLlBvaW50IC1Bcmd1bWVudExpc3QgMCwgMCcsCiAgICAnJHNjcmlwdDpjdXJyZW50ID0gTmV3LU9iamVjdCBTeXN0ZW0uRHJhd2luZy5Qb2ludCAtQXJndW1lbnRMaXN0IDAsIDAnLAogICAgYCRzY3JpcHQ6ZGVhZGxpbmUgPSAoR2V0LURhdGUpLkFkZFNlY29uZHMoJHtNYXRoLm1heCg1LCBNYXRoLnRydW5jKGRlYWRsaW5lU2Vjb25kcykpfSlgLAogICAgJyRzY3JpcHQ6ZXhwaXJlZCA9ICRmYWxzZScsCiAgICAnJywKICAgICckZm9ybSA9IE5ldy1PYmplY3QgU3lzdGVtLldpbmRvd3MuRm9ybXMuRm9ybScsCiAgICAnJGZvcm0uRm9ybUJvcmRlclN0eWxlID0gW1N5c3RlbS5XaW5kb3dzLkZvcm1zLkZvcm1Cb3JkZXJTdHlsZV06Ok5vbmUnLAogICAgJyRmb3JtLlN0YXJ0UG9zaXRpb24gPSBbU3lzdGVtLldpbmRvd3MuRm9ybXMuRm9ybVN0YXJ0UG9zaXRpb25dOjpNYW51YWwnLAogICAgJyRmb3JtLkJvdW5kcyA9ICRzY3JlZW4nLAogICAgJyRmb3JtLlRvcE1vc3QgPSAkdHJ1ZScsCiAgICAnJGZvcm0uU2hvd0luVGFza2JhciA9ICRmYWxzZScsCiAgICAnJGZvcm0uQmFja0NvbG9yID0gW1N5c3RlbS5EcmF3aW5nLkNvbG9yXTo6QmxhY2snLAogICAgJyRmb3JtLk9wYWNpdHkgPSAwLjM1JywKICAgICckZm9ybS5DdXJzb3IgPSBbU3lzdGVtLldpbmRvd3MuRm9ybXMuQ3Vyc29yc106OkNyb3NzJywKICAgICckZm9ybS5LZXlQcmV2aWV3ID0gJHRydWUnLAogICAgJyRzY3JpcHQ6Zm9ybSA9ICRmb3JtJywKICAgICckc2NyaXB0OmhvbGUgPSAkbnVsbCcsCiAgICAnJHNjcmlwdDpmdWxsUmVjdCA9IE5ldy1PYmplY3QgU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlIC1Bcmd1bWVudExpc3QgJHNjcmVlbi5YLCAkc2NyZWVuLlksICRzY3JlZW4uV2lkdGgsICRzY3JlZW4uSGVpZ2h0JywKICAgICcnLAogICAgJ2Z1bmN0aW9uIFVwZGF0ZS1Ib2xlKFtpbnRdJGxlZnQsIFtpbnRdJHRvcCwgW2ludF0kd2lkdGgsIFtpbnRdJGhlaWdodCkgeycsCiAgICAnICAkcmVnaW9uID0gTmV3LU9iamVjdCBTeXN0ZW0uRHJhd2luZy5SZWdpb24gLUFyZ3VtZW50TGlzdCAkc2NyaXB0OmZ1bGxSZWN0JywKICAgICcgIGlmICgkd2lkdGggLWdlIDIgLWFuZCAkaGVpZ2h0IC1nZSAyKSB7JywKICAgICcgICAgJGN1dCA9IE5ldy1PYmplY3QgU3lzdGVtLkRyYXdpbmcuUmVjdGFuZ2xlIC1Bcmd1bWVudExpc3QgJGxlZnQsICR0b3AsICR3aWR0aCwgJGhlaWdodCcsCiAgICAnICAgICRyZWdpb24uRXhjbHVkZSgkY3V0KScsCiAgICAnICB9JywKICAgICcgIGlmICgkbnVsbCAtbmUgJHNjcmlwdDpob2xlKSB7ICRzY3JpcHQ6aG9sZS5EaXNwb3NlKCkgfScsCiAgICAnICAkc2NyaXB0OmhvbGUgPSAkcmVnaW9uJywKICAgICcgICRzY3JpcHQ6Zm9ybS5SZWdpb24gPSAkcmVnaW9uJywKICAgICd9JywKICAgICcnLAogICAgJyRmb3JtLkFkZF9QYWludCh7JywKICAgICcgIGlmICgtbm90ICRzY3JpcHQ6ZHJhZ2dpbmcpIHsgcmV0dXJuIH0nLAogICAgJyAgJGdyYXBoaWNzID0gJF8uR3JhcGhpY3MnLAogICAgJyAgJGxlZnQgPSBbTWF0aF06Ok1pbigkc2NyaXB0Om9yaWdpbi5YLCAkc2NyaXB0OmN1cnJlbnQuWCknLAogICAgJyAgJHRvcCA9IFtNYXRoXTo6TWluKCRzY3JpcHQ6b3JpZ2luLlksICRzY3JpcHQ6Y3VycmVudC5ZKScsCiAgICAnICAkd2lkdGggPSBbTWF0aF06OkFicygkc2NyaXB0OmN1cnJlbnQuWCAtICRzY3JpcHQ6b3JpZ2luLlgpJywKICAgICcgICRoZWlnaHQgPSBbTWF0aF06OkFicygkc2NyaXB0OmN1cnJlbnQuWSAtICRzY3JpcHQ6b3JpZ2luLlkpJywKICAgICcgIGlmICgkd2lkdGggLWx0IDIgLW9yICRoZWlnaHQgLWx0IDIpIHsgcmV0dXJuIH0nLAogICAgJyAgJHBlbiA9IE5ldy1PYmplY3QgU3lzdGVtLkRyYXdpbmcuUGVuIC1Bcmd1bWVudExpc3QgKFtTeXN0ZW0uRHJhd2luZy5Db2xvcl06OkZyb21BcmdiKDYxLCA5MCwgMjU0KSksIDInLAogICAgJyAgJGdyYXBoaWNzLkRyYXdSZWN0YW5nbGUoJHBlbiwgKCRsZWZ0IC0gMiksICgkdG9wIC0gMiksICgkd2lkdGggKyA0KSwgKCRoZWlnaHQgKyA0KSknLAogICAgJyAgJHBlbi5EaXNwb3NlKCknLAogICAgJyAgJGxhYmVsID0gKFwnezB9IHggezF9XCcgLWYgJHdpZHRoLCAkaGVpZ2h0KScsCiAgICAnICAkZm9udCA9IE5ldy1PYmplY3QgU3lzdGVtLkRyYXdpbmcuRm9udCAtQXJndW1lbnRMaXN0IFwnU2Vnb2UgVUlcJywgMTEnLAogICAgJyAgJHRleHRTaXplID0gJGdyYXBoaWNzLk1lYXN1cmVTdHJpbmcoJGxhYmVsLCAkZm9udCknLAogICAgJyAgJGJhZGdlID0gTmV3LU9iamVjdCBTeXN0ZW0uRHJhd2luZy5Tb2xpZEJydXNoIC1Bcmd1bWVudExpc3QgKFtTeXN0ZW0uRHJhd2luZy5Db2xvcl06OkZyb21BcmdiKDYxLCA5MCwgMjU0KSknLAogICAgJyAgJGJhZGdlWSA9IGlmICgkdG9wIC1nZSAzMikgeyAkdG9wIC0gMzAgfSBlbHNlIHsgJHRvcCArICRoZWlnaHQgKyA4IH0nLAogICAgJyAgJGdyYXBoaWNzLkZpbGxSZWN0YW5nbGUoJGJhZGdlLCAkbGVmdCwgJGJhZGdlWSwgKCR0ZXh0U2l6ZS5XaWR0aCArIDEwKSwgKCR0ZXh0U2l6ZS5IZWlnaHQgKyA0KSknLAogICAgJyAgJGdyYXBoaWNzLkRyYXdTdHJpbmcoJGxhYmVsLCAkZm9udCwgW1N5c3RlbS5EcmF3aW5nLkJydXNoZXNdOjpXaGl0ZSwgKCRsZWZ0ICsgNSksICgkYmFkZ2VZICsgMikpJywKICAgICcgICRiYWRnZS5EaXNwb3NlKCknLAogICAgJyAgJGZvbnQuRGlzcG9zZSgpJywKICAgICd9KScsCiAgICAnJywKICAgICckZm9ybS5BZGRfTW91c2VEb3duKHsnLAogICAgJyAgaWYgKCRfLkJ1dHRvbiAtZXEgW1N5c3RlbS5XaW5kb3dzLkZvcm1zLk1vdXNlQnV0dG9uc106OlJpZ2h0KSB7ICRzY3JpcHQ6YXJlYSA9ICRudWxsOyAkc2NyaXB0OmZvcm0uQ2xvc2UoKTsgcmV0dXJuIH0nLAogICAgJyAgaWYgKCRfLkJ1dHRvbiAtbmUgW1N5c3RlbS5XaW5kb3dzLkZvcm1zLk1vdXNlQnV0dG9uc106OkxlZnQpIHsgcmV0dXJuIH0nLAogICAgJyAgJHNjcmlwdDpkcmFnZ2luZyA9ICR0cnVlJywKICAgICcgICRzY3JpcHQ6b3JpZ2luID0gJF8uTG9jYXRpb24nLAogICAgJyAgJHNjcmlwdDpjdXJyZW50ID0gJF8uTG9jYXRpb24nLAogICAgJyAgVXBkYXRlLUhvbGUgMCAwIDAgMCcsCiAgICAnfSknLAogICAgJycsCiAgICAnJGZvcm0uQWRkX01vdXNlTW92ZSh7JywKICAgICcgIGlmICgtbm90ICRzY3JpcHQ6ZHJhZ2dpbmcpIHsgcmV0dXJuIH0nLAogICAgJyAgJHNjcmlwdDpjdXJyZW50ID0gJF8uTG9jYXRpb24nLAogICAgJyAgJGxlZnQgPSBbTWF0aF06Ok1pbigkc2NyaXB0Om9yaWdpbi5YLCAkc2NyaXB0OmN1cnJlbnQuWCknLAogICAgJyAgJHRvcCA9IFtNYXRoXTo6TWluKCRzY3JpcHQ6b3JpZ2luLlksICRzY3JpcHQ6Y3VycmVudC5ZKScsCiAgICAnICAkd2lkdGggPSBbTWF0aF06OkFicygkc2NyaXB0OmN1cnJlbnQuWCAtICRzY3JpcHQ6b3JpZ2luLlgpJywKICAgICcgICRoZWlnaHQgPSBbTWF0aF06OkFicygkc2NyaXB0OmN1cnJlbnQuWSAtICRzY3JpcHQ6b3JpZ2luLlkpJywKICAgICcgIFVwZGF0ZS1Ib2xlICRsZWZ0ICR0b3AgJHdpZHRoICRoZWlnaHQnLAogICAgJyAgJHNjcmlwdDpmb3JtLkludmFsaWRhdGUoKScsCiAgICAnfSknLAogICAgJycsCiAgICAnJGZvcm0uQWRkX01vdXNlVXAoeycsCiAgICAnICBpZiAoLW5vdCAkc2NyaXB0OmRyYWdnaW5nKSB7IHJldHVybiB9JywKICAgICcgICRzY3JpcHQ6ZHJhZ2dpbmcgPSAkZmFsc2UnLAogICAgJyAgJHNjcmlwdDpjdXJyZW50ID0gJF8uTG9jYXRpb24nLAogICAgJyAgJGxlZnQgPSBbTWF0aF06Ok1pbigkc2NyaXB0Om9yaWdpbi5YLCAkc2NyaXB0OmN1cnJlbnQuWCknLAogICAgJyAgJHRvcCA9IFtNYXRoXTo6TWluKCRzY3JpcHQ6b3JpZ2luLlksICRzY3JpcHQ6Y3VycmVudC5ZKScsCiAgICAnICAkd2lkdGggPSBbTWF0aF06OkFicygkc2NyaXB0OmN1cnJlbnQuWCAtICRzY3JpcHQ6b3JpZ2luLlgpJywKICAgICcgICRoZWlnaHQgPSBbTWF0aF06OkFicygkc2NyaXB0OmN1cnJlbnQuWSAtICRzY3JpcHQ6b3JpZ2luLlkpJywKICAgICcgIGlmICgkd2lkdGggLWx0IDQgLW9yICRoZWlnaHQgLWx0IDQpIHsgVXBkYXRlLUhvbGUgMCAwIDAgMDsgJHNjcmlwdDpmb3JtLkludmFsaWRhdGUoKTsgcmV0dXJuIH0nLAogICAgJyAgJHNjcmlwdDphcmVhID0gTmV3LU9iamVjdCBTeXN0ZW0uRHJhd2luZy5SZWN0YW5nbGUgLUFyZ3VtZW50TGlzdCAoJGxlZnQgKyAkc2NyaXB0OnNjcmVlbi5YKSwgKCR0b3AgKyAkc2NyaXB0OnNjcmVlbi5ZKSwgJHdpZHRoLCAkaGVpZ2h0JywKICAgICcgICRzY3JpcHQ6Zm9ybS5DbG9zZSgpJywKICAgICd9KScsCiAgICAnJywKICAgICckZm9ybS5BZGRfS2V5RG93bih7JywKICAgICcgIGlmICgkXy5LZXlDb2RlIC1lcSBbU3lzdGVtLldpbmRvd3MuRm9ybXMuS2V5c106OkVzY2FwZSkgeyAkc2NyaXB0OmFyZWEgPSAkbnVsbDsgJHNjcmlwdDpmb3JtLkNsb3NlKCkgfScsCiAgICAnfSknLAogICAgJycsCiAgICAnJHRpbWVyID0gTmV3LU9iamVjdCBTeXN0ZW0uV2luZG93cy5Gb3Jtcy5UaW1lcicsCiAgICAnJHRpbWVyLkludGVydmFsID0gMTAwMCcsCiAgICAnJHNjcmlwdDp0aW1lciA9ICR0aW1lcicsCiAgICAnJHRpbWVyLkFkZF9UaWNrKHsnLAogICAgJyAgaWYgKChHZXQtRGF0ZSkgLWx0ICRzY3JpcHQ6ZGVhZGxpbmUpIHsgcmV0dXJuIH0nLAogICAgJyAgJHNjcmlwdDpleHBpcmVkID0gJHRydWUnLAogICAgJyAgJHNjcmlwdDp0aW1lci5TdG9wKCknLAogICAgJyAgJHNjcmlwdDphcmVhID0gJG51bGwnLAogICAgJyAgJHNjcmlwdDpmb3JtLkNsb3NlKCknLAogICAgJ30pJywKICAgICckdGltZXIuU3RhcnQoKScsCiAgICAnJywKICAgICdbU3lzdGVtLldpbmRvd3MuRm9ybXMuQXBwbGljYXRpb25dOjpSdW4oJGZvcm0pJywKICAgICckdGltZXIuU3RvcCgpJywKICAgICdpZiAoJG51bGwgLWVxICRzY3JpcHQ6YXJlYSkgeycsCiAgICAnICBpZiAoJHNjcmlwdDpleHBpcmVkKSB7IFtDb25zb2xlXTo6RXJyb3IuV3JpdGVMaW5lKFwnbm8gc2NyZWVuIHNuaXAgYXJyaXZlZFwnKTsgZXhpdCAzIH0nLAogICAgIiAgW0NvbnNvbGVdOjpFcnJvci5Xcml0ZUxpbmUoJ3RoZSBzY3JlZW4gc25pcCB3YXMgY2FuY2VsbGVkJyk7IGV4aXQgMiIsCiAgICAnfScsCiAgICAnU3RhcnQtU2xlZXAgLU1pbGxpc2Vjb25kcyAyMDAnLAogICAgJyRiaXRtYXAgPSBOZXctT2JqZWN0IFN5c3RlbS5EcmF3aW5nLkJpdG1hcCAtQXJndW1lbnRMaXN0ICRzY3JpcHQ6YXJlYS5XaWR0aCwgJHNjcmlwdDphcmVhLkhlaWdodCcsCiAgICAnJGdyYXBoaWNzID0gW1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzXTo6RnJvbUltYWdlKCRiaXRtYXApJywKICAgICckZ3JhcGhpY3MuQ29weUZyb21TY3JlZW4oJHNjcmlwdDphcmVhLlgsICRzY3JpcHQ6YXJlYS5ZLCAwLCAwLCAkYml0bWFwLlNpemUpJywKICAgICckZ3JhcGhpY3MuRGlzcG9zZSgpJywKICAgIGAkYml0bWFwLlNhdmUoJyR7ZXNjYXBlU2luZ2xlUXVvdGVzKGRlc3RpbmF0aW9uKX0nLCBbU3lzdGVtLkRyYXdpbmcuSW1hZ2luZy5JbWFnZUZvcm1hdF06OlBuZylgLAogICAgJyRiaXRtYXAuRGlzcG9zZSgpJywKICAgICJbQ29uc29sZV06Ok91dC5Xcml0ZUxpbmUoJ2NhcHR1cmVkJykiLAogIF0uam9pbignXG4nKQp9CgovKioKICogUG93ZXJTaGVsbCByZWFkcyBpdHMgc2NyaXB0IGZyb20gb25lIGJhc2U2NCBVVEYtMTZMRSBhcmd1bWVudCwgc28gbm8gcXVvdGluZwogKiBydWxlIG9mIGNtZC5leGUsIG5vIHRlbXBvcmFyeSBzY3JpcHQgZmlsZSwgYW5kIG5vIGNvbnNvbGUgd2luZG93IGFwcGx5LgogKiBAcGFyYW0gc2NyaXB0IC0gdGhlIHNuaXAgc2NyaXB0LgogKiBAcmV0dXJucyB0aGUgY29tbWFuZC1saW5lIGFyZ3VtZW50LgogKi8KZXhwb3J0IGZ1bmN0aW9uIGVuY29kZVdpbmRvd3NTY3JpcHQoc2NyaXB0KSB7CiAgcmV0dXJuIEJ1ZmZlci5mcm9tKHNjcmlwdCwgJ3V0ZjE2bGUnKS50b1N0cmluZygnYmFzZTY0JykKfQoKLyoqCiAqIFF1b3RlIGEgcGF0aCBmb3IgYSBQb3dlclNoZWxsIHNpbmdsZS1xdW90ZWQgc3RyaW5nLgogKiBAcGFyYW0gdmFsdWUgLSBwYXRoIHRleHQuCiAqIEByZXR1cm5zIHRoZSBlc2NhcGVkIHRleHQuCiAqLwpmdW5jdGlvbiBlc2NhcGVTaW5nbGVRdW90ZXModmFsdWUpIHsKICByZXR1cm4gdmFsdWUucmVwbGFjZUFsbCgiJyIsICInJyIpCn0K
+/**
+ * The Windows half of the snipper, kept apart so the script can be inspected
+ * and syntax-checked without running a capture.
+ *
+ * The system snipping overlay (`ms-screenclip:`) is bound to one display on some
+ * setups and always leaves the picture in the clipboard. This script draws its
+ * own selection layer across the whole virtual screen instead — the desktop keeps
+ * running behind a light veil, any monitor can be used, a cancel is reported
+ * immediately, and the selected rectangle is copied straight into the PNG.
+ */
+
+/**
+ * Build the PowerShell script that writes the picked PNG to `destination`.
+ * @param destination - absolute path of the PNG to create.
+ * @param deadlineSeconds - how long the user may take.
+ * @returns the script text.
+ */
+export function windowsScript(destination, deadlineSeconds = 90) {
+  return [
+    "$ErrorActionPreference = 'Stop'",
+    'Add-Type -AssemblyName System.Windows.Forms',
+    'Add-Type -AssemblyName System.Drawing',
+    "Add-Type -TypeDefinition 'using System; using System.Runtime.InteropServices; public static class DshShotDpi { [DllImport(\"user32.dll\")] public static extern bool SetProcessDPIAware(); }'",
+    'try { [DshShotDpi]::SetProcessDPIAware() | Out-Null } catch { }',
+    '$screen = [System.Windows.Forms.SystemInformation]::VirtualScreen',
+    '$script:area = $null',
+    '$script:dragging = $false',
+    '$script:origin = New-Object System.Drawing.Point -ArgumentList 0, 0',
+    '$script:current = New-Object System.Drawing.Point -ArgumentList 0, 0',
+    `$script:deadline = (Get-Date).AddSeconds(${Math.max(5, Math.trunc(deadlineSeconds))})`,
+    '$script:expired = $false',
+    '',
+    '$form = New-Object System.Windows.Forms.Form',
+    '$form.FormBorderStyle = [System.Windows.Forms.FormBorderStyle]::None',
+    '$form.StartPosition = [System.Windows.Forms.FormStartPosition]::Manual',
+    '$form.Bounds = $screen',
+    '$form.TopMost = $true',
+    '$form.ShowInTaskbar = $false',
+    '$form.BackColor = [System.Drawing.Color]::Black',
+    '$form.Opacity = 0.35',
+    '$form.Cursor = [System.Windows.Forms.Cursors]::Cross',
+    '$form.KeyPreview = $true',
+    '$script:form = $form',
+    '$script:hole = $null',
+    '$script:fullRect = New-Object System.Drawing.Rectangle -ArgumentList $screen.X, $screen.Y, $screen.Width, $screen.Height',
+    '',
+    'function Update-Hole([int]$left, [int]$top, [int]$width, [int]$height) {',
+    '  $region = New-Object System.Drawing.Region -ArgumentList $script:fullRect',
+    '  if ($width -ge 2 -and $height -ge 2) {',
+    '    $cut = New-Object System.Drawing.Rectangle -ArgumentList $left, $top, $width, $height',
+    '    $region.Exclude($cut)',
+    '  }',
+    '  if ($null -ne $script:hole) { $script:hole.Dispose() }',
+    '  $script:hole = $region',
+    '  $script:form.Region = $region',
+    '}',
+    '',
+    '$form.Add_Paint({',
+    '  if (-not $script:dragging) { return }',
+    '  $graphics = $_.Graphics',
+    '  $left = [Math]::Min($script:origin.X, $script:current.X)',
+    '  $top = [Math]::Min($script:origin.Y, $script:current.Y)',
+    '  $width = [Math]::Abs($script:current.X - $script:origin.X)',
+    '  $height = [Math]::Abs($script:current.Y - $script:origin.Y)',
+    '  if ($width -lt 2 -or $height -lt 2) { return }',
+    '  $pen = New-Object System.Drawing.Pen -ArgumentList ([System.Drawing.Color]::FromArgb(61, 90, 254)), 2',
+    '  $graphics.DrawRectangle($pen, ($left - 2), ($top - 2), ($width + 4), ($height + 4))',
+    '  $pen.Dispose()',
+    '  $label = (\'{0} x {1}\' -f $width, $height)',
+    '  $font = New-Object System.Drawing.Font -ArgumentList \'Segoe UI\', 11',
+    '  $textSize = $graphics.MeasureString($label, $font)',
+    '  $badge = New-Object System.Drawing.SolidBrush -ArgumentList ([System.Drawing.Color]::FromArgb(61, 90, 254))',
+    '  $badgeY = if ($top -ge 32) { $top - 30 } else { $top + $height + 8 }',
+    '  $graphics.FillRectangle($badge, $left, $badgeY, ($textSize.Width + 10), ($textSize.Height + 4))',
+    '  $graphics.DrawString($label, $font, [System.Drawing.Brushes]::White, ($left + 5), ($badgeY + 2))',
+    '  $badge.Dispose()',
+    '  $font.Dispose()',
+    '})',
+    '',
+    '$form.Add_MouseDown({',
+    '  if ($_.Button -eq [System.Windows.Forms.MouseButtons]::Right) { $script:area = $null; $script:form.Close(); return }',
+    '  if ($_.Button -ne [System.Windows.Forms.MouseButtons]::Left) { return }',
+    '  $script:dragging = $true',
+    '  $script:origin = $_.Location',
+    '  $script:current = $_.Location',
+    '  Update-Hole 0 0 0 0',
+    '})',
+    '',
+    '$form.Add_MouseMove({',
+    '  if (-not $script:dragging) { return }',
+    '  $script:current = $_.Location',
+    '  $left = [Math]::Min($script:origin.X, $script:current.X)',
+    '  $top = [Math]::Min($script:origin.Y, $script:current.Y)',
+    '  $width = [Math]::Abs($script:current.X - $script:origin.X)',
+    '  $height = [Math]::Abs($script:current.Y - $script:origin.Y)',
+    '  Update-Hole $left $top $width $height',
+    '  $script:form.Invalidate()',
+    '})',
+    '',
+    '$form.Add_MouseUp({',
+    '  if (-not $script:dragging) { return }',
+    '  $script:dragging = $false',
+    '  $script:current = $_.Location',
+    '  $left = [Math]::Min($script:origin.X, $script:current.X)',
+    '  $top = [Math]::Min($script:origin.Y, $script:current.Y)',
+    '  $width = [Math]::Abs($script:current.X - $script:origin.X)',
+    '  $height = [Math]::Abs($script:current.Y - $script:origin.Y)',
+    '  if ($width -lt 4 -or $height -lt 4) { Update-Hole 0 0 0 0; $script:form.Invalidate(); return }',
+    '  $script:area = New-Object System.Drawing.Rectangle -ArgumentList ($left + $script:screen.X), ($top + $script:screen.Y), $width, $height',
+    '  $script:form.Close()',
+    '})',
+    '',
+    '$form.Add_KeyDown({',
+    '  if ($_.KeyCode -eq [System.Windows.Forms.Keys]::Escape) { $script:area = $null; $script:form.Close() }',
+    '})',
+    '',
+    '$timer = New-Object System.Windows.Forms.Timer',
+    '$timer.Interval = 1000',
+    '$script:timer = $timer',
+    '$timer.Add_Tick({',
+    '  if ((Get-Date) -lt $script:deadline) { return }',
+    '  $script:expired = $true',
+    '  $script:timer.Stop()',
+    '  $script:area = $null',
+    '  $script:form.Close()',
+    '})',
+    '$timer.Start()',
+    '',
+    '[System.Windows.Forms.Application]::Run($form)',
+    '$timer.Stop()',
+    'if ($null -eq $script:area) {',
+    '  if ($script:expired) { [Console]::Error.WriteLine(\'no screen snip arrived\'); exit 3 }',
+    "  [Console]::Error.WriteLine('the screen snip was cancelled'); exit 2",
+    '}',
+    'Start-Sleep -Milliseconds 200',
+    '$bitmap = New-Object System.Drawing.Bitmap -ArgumentList $script:area.Width, $script:area.Height',
+    '$graphics = [System.Drawing.Graphics]::FromImage($bitmap)',
+    '$graphics.CopyFromScreen($script:area.X, $script:area.Y, 0, 0, $bitmap.Size)',
+    '$graphics.Dispose()',
+    `$bitmap.Save('${escapeSingleQuotes(destination)}', [System.Drawing.Imaging.ImageFormat]::Png)`,
+    '$bitmap.Dispose()',
+    "[Console]::Out.WriteLine('captured')",
+  ].join('\n')
+}
+
+/**
+ * PowerShell reads its script from one base64 UTF-16LE argument, so no quoting
+ * rule of cmd.exe, no temporary script file, and no console window apply.
+ * @param script - the snip script.
+ * @returns the command-line argument.
+ */
+export function encodeWindowsScript(script) {
+  return Buffer.from(script, 'utf16le').toString('base64')
+}
+
+/**
+ * Quote a path for a PowerShell single-quoted string.
+ * @param value - path text.
+ * @returns the escaped text.
+ */
+function escapeSingleQuotes(value) {
+  return value.replaceAll("'", "''")
+}

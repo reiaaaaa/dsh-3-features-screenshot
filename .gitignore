@@ -1,1 +1,5 @@
-bm9kZV9tb2R1bGVzLwoudG1wLwoqLmxvZwouRFNfU3RvcmUKVGh1bWJzLmRiCg==
+node_modules/
+.tmp/
+*.log
+.DS_Store
+Thumbs.db

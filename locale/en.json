@@ -1,1 +1,7 @@
-ewogICJtZXRhIjogewogICAgInRpdGxlIjogIjMgZmVhdHVyZXMgc2NyZWVuc2hvdCIsCiAgICAiZGVzY3JpcHRpb24iOiAiQ2FwdHVyZSBhbnkgcmVnaW9uIG9mIHRoZSBzY3JlZW4gaW50byB0aGUgY29tcG9zZXIsIHRoZW4gcmVhZCBpdHMgdGV4dCwgdHJhbnNsYXRlIGl0LCBvciBkZXNjcmliZSB0aGUgcGljdHVyZS4iLAogICAgImRldGFpbCI6ICJkb2NzL0RFVEFJTC5tZCIKICB9Cn0K
+{
+  "meta": {
+    "title": "3 features screenshot",
+    "description": "Capture any region of the screen into the composer, then read its text, translate it, or describe the picture.",
+    "detail": "docs/DETAIL.md"
+  }
+}

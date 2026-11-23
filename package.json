@@ -1,1 +1,54 @@
-ewogICJuYW1lIjogIkByZWlhYWFhYS9kc2gtMy1mZWF0dXJlcy1zY3JlZW5zaG90IiwKICAidmVyc2lvbiI6ICIxLjEuMCIsCiAgInByaXZhdGUiOiB0cnVlLAogICJ0eXBlIjogIm1vZHVsZSIsCiAgImRlc2NyaXB0aW9uIjogIkNhcHR1cmUgYW55IHJlZ2lvbiBvZiBhbnkgbW9uaXRvciBpbnRvIHRoZSBjb21wb3NlciBhcyBhbiBhdHRhY2htZW50LCB0aGVuIHJlYWQgaXRzIHRleHQsIHRyYW5zbGF0ZSBpdCwgb3IgZGVzY3JpYmUgdGhlIHBpY3R1cmUg4oCUIHRocmVlIHRoaW5ncyBmcm9tIG9uZSBzY3JlZW5zaG90LiIsCiAgImxpY2Vuc2UiOiAiTUlUIiwKICAiYXV0aG9yIjogInJlaWFhYWFhIChodHRwczovL2dpdGh1Yi5jb20vcmVpYWFhYWEpIiwKICAiaG9tZXBhZ2UiOiAiaHR0cHM6Ly9naXRodWIuY29tL3JlaWFhYWFhL2RzaC0zLWZlYXR1cmVzLXNjcmVlbnNob3QjcmVhZG1lIiwKICAicmVwb3NpdG9yeSI6IHsKICAgICJ0eXBlIjogImdpdCIsCiAgICAidXJsIjogImdpdCtodHRwczovL2dpdGh1Yi5jb20vcmVpYWFhYWEvZHNoLTMtZmVhdHVyZXMtc2NyZWVuc2hvdC5naXQiCiAgfSwKICAiYnVncyI6IHsKICAgICJ1cmwiOiAiaHR0cHM6Ly9naXRodWIuY29tL3JlaWFhYWFhL2RzaC0zLWZlYXR1cmVzLXNjcmVlbnNob3QvaXNzdWVzIgogIH0sCiAgImtleXdvcmRzIjogWwogICAgImRlZXBzZWVrLWhhcm5lc3MiLAogICAgImRzaCIsCiAgICAiZHNoLXBsdWdpbiIsCiAgICAic2NyZWVuc2hvdCIsCiAgICAic25pcCIsCiAgICAib2NyIiwKICAgICJ0cmFuc2xhdGUiCiAgXSwKICAiZXhwb3J0cyI6IHsKICAgICIuIjogIi4vaW5kZXguanMiLAogICAgIi4vY2xpZW50IjogIi4vY2xpZW50LmpzIiwKICAgICIuL2xvY2FsZS8qLmpzb24iOiAiLi9sb2NhbGUvKi5qc29uIiwKICAgICIuL2ljb24iOiAiLi9pY29uLnN2ZyIKICB9LAogICJmaWxlcyI6IFsKICAgICJpbmRleC5qcyIsCiAgICAiY2xpZW50LmpzIiwKICAgICJ3aW5kb3dzLXNjcmlwdC5qcyIsCiAgICAiY29yZGlzLnBhdGNoLnltbCIsCiAgICAibG9jYWxlLyouanNvbiIsCiAgICAiZG9jcyIsCiAgICAiaWNvbi5zdmciLAogICAgImFzc2V0cyIKICBdLAogICJkc2giOiB7CiAgICAiYnVuZGxlIjogewogICAgICAicGF0Y2giOiAiLi9jb3JkaXMucGF0Y2gueW1sIgogICAgfSwKICAgICJjbGllbnQiOiB7CiAgICAgICJwbGF0Zm9ybSI6ICJ3ZWIiLAogICAgICAiaW1tZWRpYXRlbHkiOiB0cnVlLAogICAgICAiaW5qZWN0IjogWwogICAgICAgICJAZGVlcHNlZWstYWkvZHNoLWNsaWVudC11aS1jb252ZXJzYXRpb24iCiAgICAgIF0KICAgIH0KICB9Cn0K
+{
+  "name": "@reiaaaaa/dsh-3-features-screenshot",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Capture any region of any monitor into the composer as an attachment, then read its text, translate it, or describe the picture — three things from one screenshot.",
+  "license": "MIT",
+  "author": "reiaaaaa (https://github.com/reiaaaaa)",
+  "homepage": "https://github.com/reiaaaaa/dsh-3-features-screenshot#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reiaaaaa/dsh-3-features-screenshot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reiaaaaa/dsh-3-features-screenshot/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "screenshot",
+    "snip",
+    "ocr",
+    "translate"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "windows-script.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "assets"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
