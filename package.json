@@ -1,7 +1,6 @@
 {
-  "name": "@reiaaaaa/dsh-3-features-screenshot",
-  "version": "1.1.0",
-  "private": true,
+  "name": "dsh-3-features-screenshot",
+  "version": "1.2.0",
   "type": "module",
   "description": "Capture any region of any monitor into the composer as an attachment, then read its text, translate it, or describe the picture — three things from one screenshot.",
   "license": "MIT",
@@ -13,6 +12,9 @@
   },
   "bugs": {
     "url": "https://github.com/reiaaaaa/dsh-3-features-screenshot/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.0"
   },
   "keywords": [
     "deepseek-harness",
