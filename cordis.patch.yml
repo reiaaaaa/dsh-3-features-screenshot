@@ -2,5 +2,5 @@
 # screen capture to the browser over its own Connection route.
 - insert:
     - id: dsh-3-features-screenshot
-      name: '@reiaaaaa/dsh-3-features-screenshot'
+      name: 'dsh-3-features-screenshot'
       config: {}

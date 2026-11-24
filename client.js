@@ -10,7 +10,7 @@
  * is the only way a selection can reach past this window's edges.
  */
 window.__ModuleLoader__.load({
-  id: '@reiaaaaa/dsh-3-features-screenshot',
+  id: 'dsh-3-features-screenshot',
   factory(require) {
     const React = require('react')
     const h = React.createElement

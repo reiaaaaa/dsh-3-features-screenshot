@@ -23,6 +23,16 @@ A plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)
 
 Requires a DeepSeek Harness build that ships the plugin manager (`dsh` desktop 0.2.x or newer).
 
+**From npm (recommended)** — no build step, no folder to keep around, and updates come from the version number:
+
+```sh
+dsh plugin --profile web add dsh-3-features-screenshot
+```
+
+Then restart DeepSeek Harness once. The Host half is loaded when the app starts, so the very first install needs a full quit and reopen; after that, edits to `client.js` reload live. Replace `web` with your host's own profile name if it is not `web`.
+
+**From this repository** — pick this up when you want to change the code:
+
 1. Clone this repository somewhere stable:
 
    ```sh
@@ -30,7 +40,7 @@ Requires a DeepSeek Harness build that ships the plugin manager (`dsh` desktop 0
    ```
 
 2. In DeepSeek Harness open **Plugins → Add plugin** and pick the cloned directory.
-3. Restart the app once. The Host half is loaded when the app starts, so the very first install needs a full quit and reopen; after that, edits to `client.js` reload live.
+3. Restart the app once, as above.
 
 ## Use
 
@@ -98,7 +108,7 @@ The image never leaves the machine except as part of a message you send.
 
 默认是 `Ctrl+Shift+S`（macOS `⌘⇧S`），新组合会和其他命令做冲突检查。桌面版和网页版各存一份：桌面版首次修改后写入应用数据目录的 `keybindings.json`，网页版存浏览器里的 `dsh.keybindings.v1`。
 
-安装：克隆本仓库后，在 DeepSeek Harness 里打开 **插件 → 添加插件**，选择克隆下来的目录，然后完整退出并重开一次应用。
+安装：`dsh plugin --profile web add dsh-3-features-screenshot`（profile 不是 `web` 就换成你自己的），然后完整退出并重开一次应用。也可以克隆本仓库后，在 DeepSeek Harness 里打开 **插件 → 添加插件**，选择克隆下来的目录。
 
 ## License
 
